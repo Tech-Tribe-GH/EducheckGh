@@ -31,16 +31,16 @@ header {
 header .logo {
   color: #fff;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 1000;
   font-style: normal;
-  padding-left: 60px;
+  padding-left: 90px;
   cursor: pointer;
   
 }
 
 .nav-bar {
-  padding-left: 50px;
+  padding-left: 100px;
   align-self: center;
 }
 
@@ -48,7 +48,7 @@ header .nav-bar span {
   font-weight: 600;
   font-size: 1.3em;
   color: #fff;
-  gap: 300px;
+  gap: 350px;
 }
 
 header .nav-bar a {
@@ -116,29 +116,18 @@ a {
   transition: 0.4s ease-in;
 }
 
-.pic {
+
+.container1{
   width: 100%;
   height: 500px;
-  background-image: url(assets/images/pic1.jpg);
-  background-color: #000;
-  background-size: cover;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(5000px);
-  background-position: center;
-}
-
-.container1 {
-  width: 100%;
-  height: 100%;
-  background-color: #0000000b;
-  backdrop-filter: blur(12px);
-  background-position: center;
+  background: #6575ef;
   opacity: 1;
 	animation-name: fadein;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 1.3s;
 }
+
 
 
 
@@ -154,72 +143,76 @@ a {
 }
 
 
-
-.container1 h1{
-  font-size: 3em;
-  color: #fff;
-  font-weight: 800;
-  justify-content: center;
+.container1 .text{
+  width: 50%;
+  height: 100%;
+  float: left;
   padding-top: 40px;
+  left: 500;
   padding-left: 0px;
-  
+}
+
+
+.container h1, h2, h4, .button{
+  padding-left: 20px;
+}
+
+
+.container1 .avatar{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.container1 .avatar img{
+  float: right;
 }
 
 
 
-.container1 h2{
-  font-size: 2em;
+.container1 .text h1{
   color: #fff;
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+
+.container1 .text h2{
+  color: #000;
   font-weight: 600;
-  justify-content: center;
-  padding-top: 40px;
-  padding-left: 40px;
-  
+  font-size: 2.5em;
 }
 
 
-
-.container1 p{
-  font-size: 1.7em;
+.container1 .text h4{
   color: #fff;
-  font-weight: 500;
-  justify-content: center;
-  padding-top: 40px;
-  padding-left: 40px;
-  
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 
-.container1 button{
-  font-size: 1.7em;
-  background: #6575ef;
-  font-weight: 500;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 330%);
+.container1 .button a button{
+  background: #000;
   border: none;
-  border-radius: 40px;
-  width: 300px;
-  height: 50px;
-}
-
-.container1 a button{
-  text-decoration: none;
   color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  width: 250px;
   font-size: 2em;
-  font-weight: 600;
-  user-select: none;
-  cursor: pointer;
+  font-weight: 500;
+  
 }
 
 
-.container1 button:hover{
-  background: #fff;
+
+
+.container1 .button a button:hover{
   color: #6575ef;
-  transition: 1s ease-in-out;
-
+  background: #fff;
+  transition: all 0.6s ease;
 }
+
+
 
 
 .services{
@@ -248,6 +241,7 @@ a {
   align-content: center;
   top: 50%;
   left: 50%;
+ 
 
 }
 
@@ -256,7 +250,8 @@ a {
   transform: perspective(500px)
              translateY(8px) 
              rotateY(10deg);
-  transition: 1s ease;           
+  transition: 1s ease; 
+  
 }
 
 
@@ -265,5 +260,69 @@ a {
 }
 
 
+
+
+.whyus-container{
+  background: #6575ef;
+  width: 1200px;
+  height: 400px;
+  color: #6575ef;
+  align-self: center;
+  align-content: center;
+}
+
+
+.whyus{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+.h12{
+font-size: 2.5em;
+font-weight: 600;
+color: #fff;
+padding-top: 50px;
+}
+
+.whyus .containers{
+  background: #fff;
+  box-shadow: 2px 2px 0px 1px #716e6e3f;
+  height: 250px;
+  width: 300px;
+  border: 3px solid #6575ef;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  align-content: center;
+ 
+
+}
+
+
+.whyus .containers:hover{
+  transform: perspective(500px)
+             translateX(8px) 
+             rotateX(360deg);
+  transition: 2s ease; 
+  
+}
+
+
+.whyus .containers h2{
+  align-self: center;
+  padding-right: 40px;
+  font-weight: 450;
+  font-size: 1.5em;
+  color: #000;
+}
+
+
+.whyus .containers h2 img{
+  width: 170px;
+  height: 120px;
+}
 
 
