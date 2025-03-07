@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+header {
+  display: flex;
+  background: #6575ef;
+  width: 100%;
+  height: 65px;
+  font-family: "Comfortaa", sans-serif;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 20px 0px 15px 0px;
+  background: #484ee3;
+  align-items: center;
+  user-select: none;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 2em;
+  font-weight: 1000;
+  font-style: normal;
+  padding-left: 60px;
+  cursor: pointer;
+  
+}
+
+.nav-bar {
+  padding-left: 50px;
+  align-self: center;
+}
+
+header .nav-bar span {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #fff;
+  gap: 300px;
+}
+
+header .nav-bar a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #fff;
+  
+  
+}
+
+
+header .nav-bar .hlinks:hover{
+  border: 3px solid #fff;
+  border-radius: 20px;
+  transition: .2s ease-in-out;
+  
+}
+
+
+
+.header .nav-bar span,
+a {
+  padding: 20px;
+}
+
+.nav-bar select {
+  border: 2.5px solid #fff;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  color: #6575ef;
+  height: 30px;
+  font-weight: 600;
+}
+
+.nav-bar select:hover {
+  background: #fff;
+  color: #6575ef;
+}
+
+.nav-bar select option {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+
+
+.nav-bar a button {
+  width: 100px;
+  height: 35px;
+  font-weight: 700;
+  font-size: 1em;
+  background: #fff;
+  color: #6575ef;
+  border: none;
+  border-radius: 10px;
+  padding-left: 600;
+}
+
+.nav-bar a button:hover {
+  border: 2.5px solid #fff;
+  background: none;
+  color: #fff;
+  transition: 0.4s ease-in;
+}
+
+.pic {
+  width: 100%;
+  height: 500px;
+  background-image: url(assets/images/pic1.jpg);
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(5000px);
+  background-position: center;
+}
+
+.container1 {
+  width: 100%;
+  height: 100%;
+  background-color: #0000000b;
+  backdrop-filter: blur(12px);
+  background-position: center;
+  opacity: 1;
+	animation-name: fadein;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.3s;
+}
+
+
+
+@keyframes fadein{
+	0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+
+
+.container1 h1{
+  font-size: 3em;
+  color: #fff;
+  font-weight: 800;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 0px;
+  
+}
+
+
+
+.container1 h2{
+  font-size: 2em;
+  color: #fff;
+  font-weight: 600;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  
+}
+
+
+
+.container1 p{
+  font-size: 1.7em;
+  color: #fff;
+  font-weight: 500;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 40px;
+  
+}
+
+
+.container1 button{
+  font-size: 1.7em;
+  background: #6575ef;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 330%);
+  border: none;
+  border-radius: 40px;
+  width: 300px;
+  height: 50px;
+}
+
+.container1 a button{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.container1 button:hover{
+  background: #fff;
+  color: #6575ef;
+  transition: 1s ease-in-out;
+
+}
+
+
+.services{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.h1{
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #6575ef;
+  padding-top: 50px;
+}
+
+
+
+.services .containers{
+  background: #fff;
+  box-shadow: 2px 2px 0px 1px #716e6e3f;
+  height: 150px;
+  width: 300px;
+  border: 1px solid #b9b8b8a0;
+  border-left: 8px solid #484ee3;
+  border-radius: 20px;
+  align-content: center;
+  top: 50%;
+  left: 50%;
+
+}
+
+
+.services .containers:hover{
+  transform: perspective(500px)
+             translateY(8px) 
+             rotateY(10deg);
+  transition: 1s ease;           
+}
+
+
+.containers .content{
+  padding-left: 10px;
+}
+
+
+
+
